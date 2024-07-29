@@ -28,21 +28,21 @@ public class Formater {
             if (word.contains("(")){
                 String [] format = Formater.format(word);
                 String returned = Types.returnbinaryI(inst, format);
-                return returned;
+                return "\n" + word + "\n" + returned;
             } else {
                 String [] format = Formater.format(word);
                 String returned = Types.returnbinaryI(inst, format);
-                return returned;
+                return "\n" + word + "\n" + returned;
             }
         } else if (instruction.getTypeR(inst)!= null) {
             String [] format = Formater.format(word);
             String returned = Types.returnbinaryR(inst, format);
             System.out.println(word);
-            return returned;
+            return "\n" + word + "\n" + returned;
         } else {
             String [] rightWord = word.split(" ");
             String returned = Types.returnbinaryJ(instruction.getTypeJ(rightWord[0]), rightWord[1]);
-            return returned;
+            return "\n" + word + "\n" + returned;
         }
     }
 }
