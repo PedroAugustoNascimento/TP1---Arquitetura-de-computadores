@@ -21,6 +21,9 @@ public class ReaderImpress{
                 all += binary + "\n";
                  line = readArchive.readLine();    
             }
+             if(check){
+               System.out.println("Arquivo impresso.");
+            }
                
             archive.close();
        } catch (IOException e) {
