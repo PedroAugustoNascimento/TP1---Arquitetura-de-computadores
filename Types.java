@@ -31,7 +31,6 @@ public class Types {
         }
 
         if (instruction.equals("bgtz") || instruction.equals("blez") || instruction.equals("bltz")) {
-            System.out.println(translate[1]);
             translate[1] = Traduction.arrangeBinary(translate[1], 16);
             binary += translate[0] + "00000" + translate[1];
             return binary;
