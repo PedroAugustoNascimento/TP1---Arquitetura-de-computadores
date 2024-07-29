@@ -33,7 +33,7 @@ public class ReaderImpress{
 
        //Impress the .txt with final results
         try { 
-               BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("C:\\Users\\pakkz\\OneDrive\\Documentos\\TP1 - Arquitetura de Computadores\\Resultado do txt\\result.txt"));
+               BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("C:\\Users\\pakkz\\OneDrive\\Documentos\\TP1 - Arquitetura de Computadores\\Resultado do txt\\result.txt")); //Relative path
                bufferedWriter.write(all, 0, all.length());
                bufferedWriter.close();
           } catch (Exception e) {
