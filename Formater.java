@@ -5,9 +5,9 @@ public class Formater {
 
         if (word.contains("(")){
             formatWord = formatWord.replace("$", ""); // add, t1, t1, t0 -> without $ on instructions
-            formatWord = formatWord.replace("(", ","); // without (
-            formatWord = formatWord.replace(")", ""); // without )
-            String[] rightInstruction = formatWord.split(","); // without ,
+            formatWord = formatWord.replace("(", ","); // remove (
+            formatWord = formatWord.replace(")", ""); // remove )
+            String[] rightInstruction = formatWord.split(","); // 
             String change = rightInstruction[2];
             rightInstruction[2] = rightInstruction[3];
             rightInstruction[3] = change;
