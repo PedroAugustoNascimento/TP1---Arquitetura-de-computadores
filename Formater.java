@@ -37,7 +37,6 @@ public class Formater {
         } else if (instruction.getTypeR(inst)!= null) {
             String [] format = Formater.format(word);
             String returned = Types.returnbinaryR(inst, format);
-            System.out.println(word);
             return "\n" + word + "\n" + returned;
         } else {
             String [] rightWord = word.split(" ");
