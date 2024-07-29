@@ -116,7 +116,7 @@ public class InstAndRegister {
         registers.put("zero", "00000");
     }
 
-    //Getters Types Instructions
+    //Getters Methods
     public String getTypeI(String key) {
         return typeI.get(key);
    }
