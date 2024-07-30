@@ -8,3 +8,5 @@ Instruções:
 3) Colar no terminal.
 
 O resultado será impresso na pasta "Resultado do txt" com o nome "result.txt".
+
+Feito por Pedro Augusto e Rafi Gabriel
