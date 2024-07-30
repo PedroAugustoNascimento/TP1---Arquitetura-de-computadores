@@ -10,6 +10,7 @@ public class ReaderImpress{
      //Read the .txt file
     public static void readImpress(String path) { 
         String binary = "", all = "";
+        boolean check = true;
         try {
             FileReader archive = new FileReader(path);
             BufferedReader readArchive = new BufferedReader(archive);
